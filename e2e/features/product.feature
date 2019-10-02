@@ -6,7 +6,8 @@ Feature: Product Management
     Background: Ensure product isn't in the system
         Given a product doesn't exist
             | name    | description       | price |
-            | carrots | orange vegetables | 10 |
+            | carrots | orange vegetables | 10    |
 
     Scenario: A product is added
         When I add the productThen the product is created
+        Then the product is created
